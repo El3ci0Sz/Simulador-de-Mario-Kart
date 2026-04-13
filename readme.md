@@ -116,12 +116,10 @@ Este projeto nasceu como parte do desafio do curso **Formação Node.js Fundamen
    git clone https://github.com/El3ci0Sz/Simulador-de-Mario-Kart.git
    
 2. Navegue até a pasta do projeto:
-
-cd Simulador-de-Mario-Kart
+  cd Simulador-de-Mario-Kart
+  
 3. Execute o codigo principal:
+  node src/index.js
 
-node src/index.js
-
-3.1 Execute a versão inicial do codigo?
-
-node src/old_index.js
+3.1 Execute a versão inicial do codigo:
+  node src/old_index.js
