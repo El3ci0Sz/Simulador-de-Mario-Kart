@@ -1,5 +1,3 @@
-< ! -- markdownlint-disable MD033 MD013 -- >
-
 <h1>Desafio de projeto do Felipão: Mario Kart.JS</h1>
 
   <table>
@@ -88,7 +86,7 @@ Este projeto nasceu como parte do desafio do curso **Formação Node.js Fundamen
 * **Nota Histórica:** O código original e estruturalmente básico do desafio está preservado no arquivo `old_index.js` para fins de comparação didática.
 
 * **Evolução** Esta versão atual (no diretório `src/`) evoluiu para uma arquitetura orientada a objetos, e com muitas lógicas implementadas para enriquecer o simulador.
-*
+
 * **A interface visual no terminal foi construída com o auxílio de Inteligência Artificial**, para garantir uma experiência de log muito mais imersiva e legível.
 
 ---
@@ -115,12 +113,12 @@ Este projeto nasceu como parte do desafio do curso **Formação Node.js Fundamen
 **Pré-requisitos:** Você precisa ter o [Node.js](https://nodejs.org/) instalado na sua máquina.
 
 1. **Clone este repositório:**
-   git clone <URL_DO_SEU_REPOSITORIO>
+   git clone https://github.com/El3ci0Sz/Simulador-de-Mario-Kart.git
    
 2. Navegue até a pasta do projeto:
 
-cd simulador-Corridas-MarioKart
-3. Execute o codigo principal: (Considerando que o arquivo principal esteja na pasta src)
+cd Simulador-de-Mario-Kart
+3. Execute o codigo principal:
 
 node src/index.js
 
