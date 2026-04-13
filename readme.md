@@ -78,28 +78,52 @@
 
 <p></p>
 
-<h3>🕹️ Regras & mecânicas:</h3>
 
-<b>Jogadores:</b>
+Este projeto é um simulador de corridas do Mario Kart executado inteiramente no terminal, desenvolvido em **Node.js**.
 
-<input type="checkbox" id="jogadores-item" />
-<label for="jogadores-item">O Computador deve receber dois personagens para disputar a corrida em um objeto cada</label>
+## 📌 Sobre o Projeto e Créditos
 
-<b>Pistas:</b>
+Este projeto nasceu como parte do desafio do curso **Formação Node.js Fundamentals da DIO**
 
-<ul>
-  <li><input type="checkbox" id="pistas-1-item" /> <label for="pistas-1-item">Os personagens irão correr em uma pista aleatória de 5 rodadas</label></li>
-  <li><input type="checkbox" id="pistas-2-item" /> <label for="pistas-2-item">A cada rodada, será sorteado um bloco da pista que pode ser uma reta, curva ou confronto</label>
-    <ul>
-      <li><input type="checkbox" id="pistas-2-1-item" /> <label for="pistas-2-1-item">Caso o bloco da pista seja uma RETA, o jogador deve jogar um dado de 6 lados e somar o atributo VELOCIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-2-item" /> <label for="pistas-2-2-item">Caso o bloco da pista seja uma CURVA, o jogador deve jogar um dado de 6 lados e somar o atributo MANOBRABILIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Caso o bloco da pista seja um CONFRONTO, o jogador deve jogar um dado de 6 lados e somar o atributo PODER, quem perder, perde um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Nenhum jogador pode ter pontuação negativa (valores abaixo de 0)</label></li>
-    </ul>
-  </li>
-</ul>
+* **Nota Histórica:** O código original e estruturalmente básico do desafio está preservado no arquivo `old_index.js` para fins de comparação didática.
 
-<b>Condição de vitória:</b>
+* **Evolução** Esta versão atual (no diretório `src/`) evoluiu para uma arquitetura orientada a objetos, e com muitas lógicas implementadas para enriquecer o simulador.
+*
+* **A interface visual no terminal foi construída com o auxílio de Inteligência Artificial**, para garantir uma experiência de log muito mais imersiva e legível.
 
-<input type="checkbox" id="vitoria-item" />
-<label for="vitoria-item">Ao final, vence quem acumulou mais pontos</label>
+---
+
+## ✨ Principais Funcionalidades
+
+* 🎮 **3 Modos de Jogo**:
+  
+  * ⚡ **Modo Rápido**: Computa a corrida instantaneamente e exibe o pódio.
+    
+  * 📊 **Modo Detalhado**: Acompanhe a corrida rodada a rodada. Veja cada jogador avançar, escorregar em cascas de banana ou fazer *drifts* em
+  * curvas perigosas, com direito a um **minimapa visual** `[---🚗------🏆]`.
+    
+  * 🤖 **Modo Torneio (Auto)**: Ferramenta de análise de dados. Simula dezenas ou centenas de corridas silenciosamente em milissegundos e gera um relatório estatístico de *Win Rate* e *Distância Total* de cada Player.
+    
+* 👥 **Modo Grand Prix (Até 6 Carros)**: Corra no modo 1x1 ou enfrente um grid completo de Bots controlados pelo computador (até 6 personagens).
+  
+* 🍄 **Sistema de Itens e Colisões**: Sistema de inventário onde caixas surpresas dão itens. Estrelas para invencibilidade, atire Cascos de Tartaruga em quem está na frente, ou deixe Bananas físicas na pista que param quem vier atrás!
+
+---
+
+## 🏁 Como Executar na Sua Máquina
+
+**Pré-requisitos:** Você precisa ter o [Node.js](https://nodejs.org/) instalado na sua máquina.
+
+1. **Clone este repositório:**
+   git clone <URL_DO_SEU_REPOSITORIO>
+   
+2. Navegue até a pasta do projeto:
+
+cd simulador-Corridas-MarioKart
+3. Execute o codigo principal: (Considerando que o arquivo principal esteja na pasta src)
+
+node src/index.js
+
+3.1 Execute a versão inicial do codigo?
+
+node src/old_index.js
